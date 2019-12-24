@@ -1,0 +1,27 @@
+
+spring:
+  profiles:
+    active:
+      - Local
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sandip-ramani/UserAccountConfig.git
+          username: sdsdpatel@gmail.com
+          password: S@ndip24
+      #    search-paths:
+       #     - AuditManager 
+      profile: Local
+          
+#          repos:
+#            development:
+#              pattern: 
+#                - '*Local*' 
+ 
+      
+           
+ #         force-pull: true
+          
+server:
+ port: 9091
